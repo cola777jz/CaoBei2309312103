@@ -17,3 +17,5 @@ rootProject.name = "CaoBei2309312103"
 include ':app'
 include ':view-demo'
 include ':layout-demo'
+include ':dialog-demo'
+include ':work-login'
