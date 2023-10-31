@@ -20,8 +20,8 @@ import java.util.List;
  * @since 1.0.0
  */
 public class MessageAdapter extends BaseAdapter {
-    private List<MessageItem> data;
-    private Context context;
+    private final List<MessageItem> data;
+    private final Context context;
 
     public MessageAdapter(List<MessageItem> data,Context context){
         this.data=data;
@@ -47,7 +47,7 @@ public class MessageAdapter extends BaseAdapter {
         ViewHolder holder;
         MessageItem m =data.get(i);
         if(view==null){
-            holder=new ViewHolder();
+            holder= new ViewHolder();
             if (m.getMag_type()==0){
                 view= LayoutInflater.from(context).inflate(R.layout.item_left,null);
                 holder.image=view.findViewById(R.id.image_left);
@@ -65,7 +65,7 @@ public class MessageAdapter extends BaseAdapter {
         holder.title.setText(m.getTitle());
         return view;
     }
-    class ViewHolder{
+    static class ViewHolder{
         ImageView image;
         TextView title;
     }
