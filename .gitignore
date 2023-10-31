@@ -2,5 +2,7 @@
 .gradle
 .idea
 build
-.temp
-.cache
+node_modules
+docs/src/.vuepress/.cache/
+docs/src/.vuepress/.temp/
+docs/src/.vuepress/dist/
