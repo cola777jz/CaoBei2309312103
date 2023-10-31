@@ -13,7 +13,8 @@
     <ImageView
             android:id="@+id/image_right"
             android:layout_marginRight="1dp"
-            android:layout_width="80dp"
-            android:layout_height="80dp">
+            android:scaleType="centerCrop"
+            android:layout_width="35dp"
+            android:layout_height="35dp">
     </ImageView>
 </LinearLayout>

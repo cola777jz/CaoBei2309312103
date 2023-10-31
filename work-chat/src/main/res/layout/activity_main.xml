@@ -23,6 +23,7 @@
                 android:layout_width="45dp"
                 android:layout_height="45dp"
                 android:background="@drawable/voice"
+                android:scaleType="centerCrop"
                 android:layout_marginLeft="5dp"/>
 
         <EditText
@@ -40,7 +41,7 @@
                 android:textColor="@android:color/black"
                 android:textSize="18dp"
                 android:layout_marginLeft="5dp"
-                android:background="#A3A3A3"
+                android:background="@drawable/rectangle_shape"
         />
     </LinearLayout>
 </LinearLayout>
