@@ -20,7 +20,6 @@ import java.util.concurrent.atomic.AtomicReference;
  * @since 1.0.0
  */
 public class ListActivity extends AppCompatActivity {
-    private ListView listView;
     private int[] icons = {
             R.drawable.mcdd_01,
             R.drawable.mcdd_02,
@@ -74,7 +73,7 @@ public class ListActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_list);
 
-        listView = findViewById(R.id.listView);
+        ListView listView = findViewById(R.id.listView);
         listView.setAdapter(new CustomBaseAdapter());
 
         /**
