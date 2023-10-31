@@ -2,7 +2,7 @@
     <!-- Base application theme. -->
     <style name="Base.Theme.CaoBei2309312103" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
         <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+         <item name="colorPrimary">#f07c82</item>
     </style>
 
     <style name="Theme.CaoBei2309312103" parent="Base.Theme.CaoBei2309312103"/>
