@@ -1,18 +1,30 @@
-package cb.android.work_user_center;
+package cb.android.activiry_demo.activity;
 
+import android.content.Intent;
+import android.os.Bundle;
 import android.view.View;
 import android.widget.RelativeLayout;
 import android.widget.Toast;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
-import android.os.Bundle;
+import cb.android.activiry_demo.R;
 
-public class MainActivity extends AppCompatActivity {
+/**
+ * UserCenterActivity
+ *
+ * @author Cola777jz
+ * @date 2023/11/1 16:56
+ * @since 1.0.0
+ */
+public class UserCenterActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_user_center);
+
+        Toast.makeText(this, "(Intend)欢迎：" + getIntent().getExtras().getString("username"), Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, "(Bundle)text:" + getIntent().getExtras().getString("text"), Toast.LENGTH_SHORT).show();
         RelativeLayout rlOrder = findViewById(R.id.rl_order);
         RelativeLayout rlAddress = findViewById(R.id.rl_address);
         RelativeLayout rlLogout = findViewById(R.id.rl_logout);
@@ -26,6 +38,7 @@ public class MainActivity extends AppCompatActivity {
         rlLogout.setOnClickListener(view -> {
             dialog("下一步将退出登录");
         });
+
     }
 
     public void login(View view) {
